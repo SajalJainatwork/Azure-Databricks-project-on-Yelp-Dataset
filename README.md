@@ -49,9 +49,11 @@ Here we are going to use Yelp data in the following ways:
 - Broadcast Join: restaurants as per review ratings in Pheonix city.  
 - Most rated Italian restaurant in Pheonix.  
 
-𝗧𝗲𝗰𝗵 𝗦𝘁𝗮𝗰𝗸    
-➔ Language: Python3  
-➔ Services: Azure Data factory, Azure Databricks, ADLS  
+𝗧𝗲𝗰𝗵 𝗦𝘁𝗮𝗰𝗸 
+   
+✅Language: Python3  
+
+✅ Services: Azure Data factory, Azure Databricks, ADLS  
 
 ![image](https://user-images.githubusercontent.com/70576003/199231783-c611e6d2-9cf1-4431-85e9-9c048f478b3a.png)  
 
