@@ -16,38 +16,38 @@ Yelp is a community review site and an American multinational firm based in San 
 
 𝗨𝘀𝗮𝗴𝗲 𝗼𝗳 𝗗𝗮𝘁𝗮𝘀𝗲𝘁:  
 Here we are going to use Yelp data in the following ways:  
-- 𝗖𝗼𝗻𝘃𝗲𝗿𝘀𝗶𝗼𝗻: During the conversion process, the Yelp academic dataset JSON file is converted to Parquet format and further Parquet format is converted to the Delta format for further data analysis in Databricks.  
-- 𝗧𝗿𝗮𝗻𝘀𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗮𝗻𝗱 𝗟𝗼𝗮𝗱: During the transformation and load process, the uploaded dataset in Spark is read into Spark data frames. And dataset is finally analyzed in Databricks into Spark and further recommendations are deduced.    
+➡️𝗖𝗼𝗻𝘃𝗲𝗿𝘀𝗶𝗼𝗻: During the conversion process, the Yelp academic dataset JSON file is converted to Parquet format and further Parquet format is converted to the Delta format for further data analysis in Databricks.  
+➡️𝗧𝗿𝗮𝗻𝘀𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗮𝗻𝗱 𝗟𝗼𝗮𝗱: During the transformation and load process, the uploaded dataset in Spark is read into Spark data frames. And dataset is finally analyzed in Databricks into Spark and further recommendations are deduced.    
 
 𝗗𝗮𝘁𝗮 𝗔𝗻𝗮𝗹𝘆𝘀𝗶𝘀:  
-- From the Yelp website, the academic dataset is downloaded containing business, checkin, review, tips and users.  
-- The resource manager is created in Azure to categorise the resources required followed by Storage account for storing data required and the Creation of containers for uploading the dataset.  
-- The pipeline is created to copy the data from Azure storage to Azure data lake storage in the Azure data factory.  
-- The Databricks workspace and cluster is created, accessed and configured Azure data lake storage from databricks.  
-- The conversion process is done by converting the Yelp academics data file from JSON format to Parquet format and further converting it to Delta format for smooth analysis.  
-- In the transformation and load process, the uploaded dataset in Spark is read into Spark data frames.  
-- Finally, data is analyzed into Spark in Databricks deducing recommendations and data are visualized using bar charts.  
+➡️From the Yelp website, the academic dataset is downloaded containing business, checkin, review, tips and users.  
+➡️The resource manager is created in Azure to categorise the resources required followed by Storage account for storing data required and the Creation of containers for uploading the dataset.  
+➡️The pipeline is created to copy the data from Azure storage to Azure data lake storage in the Azure data factory.  
+➡️The Databricks workspace and cluster is created, accessed and configured Azure data lake storage from databricks.  
+➡️The conversion process is done by converting the Yelp academics data file from JSON format to Parquet format and further converting it to Delta format for smooth analysis.  
+➡️In the transformation and load process, the uploaded dataset in Spark is read into Spark data frames.  
+➡️Finally, data is analyzed into Spark in Databricks deducing recommendations and data are visualized using bar charts.  
 
 𝗡𝗢𝗧𝗘:  
-- The Container in Azure is created with the name “yelpcontainer” for uploading the dataset.  
-- The Yelp dataset files are uploaded in the Container in Azure.  
+➡️The Container in Azure is created with the name “yelpcontainer” for uploading the dataset.  
+➡️The Yelp dataset files are uploaded in the Container in Azure.  
 
 𝗔𝗽𝗽𝗿𝗼𝗮𝗰𝗵  
-- Read yelp datasets in ADLS and convert JSON to parquet for better performance.  
-- Convert JSON to Delta Format.  
-- Total records in each dataset.  
-- Partition tip dataset tip by a date column.  
-- repartition() vs coalesce()  
-- Find the top 3 users based on their total number of reviews.  
-- Find the top 10 users with the most fans  
-- Analyse the top 10 categories by a number of reviews.  
-- Analyse top businesses which have over 1000 reviews.  
-- Analyse Business Data: Number of restaurants per state.  
-- Analyze the top 3 restaurants in each state.  
-- List the top restaurants in a state by the number of reviews.  
-- Numbers of restaurants in Arizona state per city.  
-- Broadcast Join: restaurants as per review ratings in Pheonix city.  
-- Most rated Italian restaurant in Pheonix.  
+➡️Read yelp datasets in ADLS and convert JSON to parquet for better performance.  
+➡️Convert JSON to Delta Format.  
+➡️Total records in each dataset.  
+➡️Partition tip dataset tip by a date column.  
+➡️repartition() vs coalesce()  
+➡️Find the top 3 users based on their total number of reviews.  
+➡️Find the top 10 users with the most fans  
+➡️Analyse the top 10 categories by a number of reviews.  
+➡️Analyse top businesses which have over 1000 reviews.  
+➡️Analyse Business Data: Number of restaurants per state.  
+➡️Analyze the top 3 restaurants in each state.  
+➡️ List the top restaurants in a state by the number of reviews.  
+➡️Numbers of restaurants in Arizona state per city.  
+➡️Broadcast Join: restaurants as per review ratings in Pheonix city.  
+➡️Most rated Italian restaurant in Pheonix.  
 
 𝗧𝗲𝗰𝗵 𝗦𝘁𝗮𝗰𝗸 
    
